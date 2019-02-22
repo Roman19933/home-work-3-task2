@@ -3,7 +3,7 @@ $('.slide-show').slick({
 	nextArrow:true,
 	prevArrow:true,
 	autoplay: true,
-  	autoplaySpeed: 5000
+  	autoplaySpeed: 3000
 
 	
 });
