@@ -1,0 +1,338 @@
+body{
+	
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	color:#fff;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+html{overflow-x:hidden;}
+p, span, div,i,img,a {
+	margin: 0;
+	padding: 0
+}
+div,i,a {
+	box-sizing: border-box;
+
+}
+.container{
+	background-image:url(../img/Iron-Man.png);
+	background-repeat:no-repeat;
+	background-position: center;
+	background-size: 64%;
+	height: 723px;
+	width: 1496px;
+	/*border: 2px solid lime;*/
+	margin: auto;
+}
+.content-area{
+	width: 100%;
+	height: 100%;
+	background: rgba(37,37,45,0.9);
+	padding-top: 100px;
+	outline:none;
+}
+.main-area-content{
+	width: 1000px;
+	height: 540px;
+	background-image: linear-gradient(to right bottom, #1a191f, #25242c, #2f2f39, #3b3a47, #464656);
+	margin:auto;
+	padding-top: 60px;
+	padding-bottom:60px;
+	outline:none;
+}
+.slide-show{
+	/*background:#00dcfd;*/
+	width:850px;
+	margin: auto;
+	height: 100%;
+	outline:none;
+	/*position: relative;*/
+
+}
+
+.item{
+	display: flex;
+	 height: 551px;
+}
+ img{
+	width: 275px; 
+	position: absolute;
+	z-index: 2; 
+	left:191px;
+	top:10px;
+
+}
+.iron{
+	height: 420px;
+	background: #fff;
+	width:330px;
+	
+}
+.word-iron{
+	position: relative;
+	top:70px;
+	left:70px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size:85px;
+	color:#dc3c23;
+}
+.word-man{
+	position: relative;
+	top:70px;
+	left:50px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size:85px;
+	color:#fff;
+	opacity:1;
+}
+.man{
+	/*height: 420px;
+	width: 520px;*/
+	background-image: url(../img/ironman-png-470.png);
+	background-repeat:no-repeat;
+	background-position:130px 40px;
+	background-size: 50%;
+}
+.spider{
+	background-image: url(../img/spider-bg.gif);
+	background-repeat:no-repeat;
+	background-position:130px 40px;
+	background-size: 50%;
+}
+.captain-am{
+	background-image: url(../img/captain_america_bg.png);
+	background-repeat:no-repeat;
+	background-position:130px 40px;
+	background-size: 50%;
+}
+.man-bg{
+background: linear-gradient(135deg, rgba(52,52,64,0.28) 0%, rgba(52,52,64,0.9) 0%, rgba(52,52,64,0.9) 3%, rgba(52,52,64,0.9) 9%, rgba(52,52,64,0.9) 10%, rgba(52,52,64,0.9) 11%, rgba(52,52,64,0.9) 12%, rgba(52,52,64,0.9) 13%, rgba(52,52,64,0.9) 14%, rgba(52,52,64,0.9) 15%, rgba(52,52,64,0.9) 17%, rgba(52,52,64,0.9) 19%, rgba(52,52,64,0.9) 21%, rgba(52,52,64,0.9) 23%, rgba(52,52,64,0.9) 24%, rgba(52,52,64,0.9) 33%, rgba(52,52,64,0.9) 35%, rgba(52,52,64,0.9) 36%, rgba(52,52,64,0.9) 37%, rgba(52,52,64,0.9) 38%, rgba(52,52,64,0.9) 39%, rgba(52,52,64,0.9) 40%, rgba(52,52,64,0.9) 41%, rgba(52,52,64,0.9) 42%, rgba(52,52,64,0.9) 43%, rgba(52,52,64,0.9) 45%, rgba(26,22,28,0.9) 100%);	
+height: 420px;
+	width: 520px;
+	/*opacity: .9;*/
+	
+}
+.man img{
+	z-index:-1;
+	width: 120px; 
+	position: absolute;
+	left:360px;
+	top:-10px;
+}
+.spiderman img{
+	position: absolute;
+	left:679px;
+	top:230px;
+	z-index:-1;
+	width: 180px; 
+}
+.button-prev-next{
+	transform:rotate(-90deg);
+	position: absolute;
+	height: 30px;
+	width: 350px;
+	left:110px;
+	top: 340px;
+	z-index: 5;
+	/*border:2px solid red;*/
+	display: flex;
+	justify-content: space-between;
+	font-size:9px;
+	text-transform: uppercase;
+	color:#5c5b60;
+	font-weight: normal;
+
+}
+.button-prev-next li{
+	/*border:2px solid lime;*/
+	width: 100px;
+	height:20px;
+}
+.button-prev-next li a{
+	text-decoration: none;
+	color:#5c5b60;
+
+}
+.btn-spider{
+	padding-left:25px;
+}
+.button-prev-next li a:hover
+{
+	color:red;
+}
+
+.iron-man-btn{
+	
+	height: 50px;
+	width: 75px;
+	bottom: 0;
+}
+.menu{
+	position: absolute;
+	color:#fff;
+	z-index: 55;
+
+}
+.menu-item{
+	position: relative;
+	width:250px;
+	height:200px;
+	background:rgba(7,5,36,.7);
+	margin-left: 20px;
+	left:54px;
+	bottom: 50px;
+	display: none;
+}
+.menu-item li{
+	list-style: none;
+	height: 20px;
+	font-weight:normal;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-top: 20px;
+	
+	
+}
+.menu-item li a{
+	text-decoration: none;
+	color:#fff;
+	font-size:12px;
+}
+.menu-item li a:hover{
+	color:#29a6b8;
+	font-size:15px;
+}
+.menu-bars{
+	font-size:25px;
+	left:20px;
+}
+i.fa-bars{
+	position: relative;
+	left:75px;
+	bottom:50px;
+	font-size:25px;
+	cursor: pointer;
+}
+i.fa-times{
+	position: relative;
+	left:75px;
+	bottom:50px;
+	cursor: pointer;
+}
+.close-bars{
+	display: none;
+}
+.logo img{
+	width: 60px;
+	top:-45px;
+	left:460px;
+}
+.line{
+	position: relative;
+	border-top:4px solid red;
+	top:50px;
+	left:75px;
+	width: 65px;
+}
+.content{
+	position: relative;
+	color:red;
+	font-size: 11px;
+	top:200px;
+	left:80px;
+}
+.content hr{
+	position: relative;
+	width:230px;
+	left:-50px;
+	bottom: 5px;
+	height: 2px;
+	background: #d5d4da;
+	border:none;
+}
+.number-slide{
+	color:gray;
+	font-size:9px;
+}
+.number-slide p span{
+	color:#000;
+	font-size:20px;
+}
+.marvel{
+	color:gray;
+	font-size:7px;
+	font-weight: normal;
+	position: relative;
+	bottom: 10px;
+}
+.btn{
+	position: relative;
+	left:250px;
+	top:160px;
+
+}
+.btn a{
+	text-decoration: none;
+	color:#fff;	
+	font-weight: normal;
+	font-size:11px;
+	background: #e03d24;
+	padding: 10px 40px;
+	border-radius: 2px;
+	outline:none;
+}
+.btn a:hover{
+	background: #a5210d;
+	font-size:12px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5)
+	color:#b1d0cf;
+}
+.join{
+	position: relative;
+	top:190px;
+	left:250px;
+	font-size:8px;
+	color:#625f5f;
+}
+.join p span {
+	font-size:15px;
+	position: relative;
+	bottom: 1px;
+	left:8px;
+}
+i.fa-long-arrow-right{
+	font-size:15px;
+	position: relative;
+	top:3px;
+	left:18px;
+	color:#625f5f;
+	
+}
+.join a{
+outline: none;
+}
+.spider-foto{
+	width: 500px;
+	left:140px;
+}
+.iron-spider img{
+
+	left:720px;
+	top:155px;
+	
+	width: 130px;
+} 		
+.captain{
+	width: 350px;
+	left:165px;
+}
+.word-captain{
+	left:0;
+}
+
+
+
+
